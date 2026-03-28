@@ -1,6 +1,6 @@
 # Kun
 
-**kun** — "Be, and it is" (Arabic: كُن فَيَكُونُ; _kun fa-yakun_) — the imperative form of existence.
+**kun** (كُن) is Arabic for _"become"_ — the imperative form of existence. It is the first word of the phrase _kun fayakun_ (كن فيكون) — "Be, and it is [done]."
 
 You state intent. Kun translates it into real code.
 
