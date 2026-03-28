@@ -1,8 +1,4 @@
-<div align="right">
-
-# كُن
-
-</div>
+# Kun
 
 **kun** — _"Be, and it is."_
 
