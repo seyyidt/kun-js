@@ -1,4 +1,4 @@
-# Kun
+# Kun-js
 
 **kun** (كُن) is Arabic for _"become"_ — the imperative form of existence. It is the first word of the phrase _kun fayakun_ (كن فيكون) — "Be, and it is [done]."
 
