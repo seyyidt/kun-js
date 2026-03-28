@@ -1,13 +1,17 @@
+import { createRequire } from "node:module";
 import { Command } from "commander";
 import { loadConfig, type KunConfig } from "./config.js";
 import { build } from "./build.js";
+
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json");
 
 const program = new Command();
 
 program
   .name("kun")
   .description("Intent-driven code generator")
-  .version("0.1.0");
+  .version(version);
 
 program
   .command("build")

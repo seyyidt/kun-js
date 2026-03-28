@@ -37,6 +37,6 @@ export async function loadConfig(cwd: string): Promise<KunConfig> {
 
   throw new Error(
     `No kun.config.ts or kun.config.js found in ${cwd}.\n` +
-      `Create one — see https://github.com/kun-js/kun#llm-provider`
+      `Create one — see https://github.com/seyyidt/kun-js#quick-start`
   );
 }

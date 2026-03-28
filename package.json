@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "tsc"
   },
   "engines": {
     "node": ">=20"
@@ -28,9 +29,18 @@
     "llm",
     "ai",
     "intent",
-    "requirements"
+    "requirements",
+    "kun"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyyidt/kun-js.git"
+  },
+  "homepage": "https://kun-js.com",
+  "bugs": {
+    "url": "https://github.com/seyyidt/kun-js/issues"
+  },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
     "commander": "^13.1.0",
