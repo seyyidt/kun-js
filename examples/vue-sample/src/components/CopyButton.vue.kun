@@ -1,0 +1,15 @@
+@target vue3
+
+A button that copies provided text to the clipboard.
+
+props:
+  text: string (required) — the text to copy
+
+behavior:
+  on click → copy the text prop to clipboard using navigator.clipboard
+  after copy → show "Copied!" label for 2 seconds, then revert to "Copy"
+
+constraints:
+  - use Vue 3 Composition API with <script setup>
+  - no external libraries
+  - handle clipboard API failure gracefully (show "Failed to copy")

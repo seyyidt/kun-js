@@ -1,0 +1,17 @@
+@target vue3
+
+A simple counter component.
+
+props:
+  initialCount: number (default: 0)
+
+behavior:
+  displays the current count
+  on click "+" button → increment count by 1
+  on click "-" button → decrement count by 1
+  on click "Reset" → set count back to initialCount
+
+constraints:
+  - use Vue 3 Composition API with <script setup>
+  - no external libraries
+  - minimal inline styles, keep it readable
