@@ -1,0 +1,14 @@
+@target vue3
+
+A section showing how to install kun. Has id="install" for anchor linking.
+
+content:
+  heading: "Install"
+  a code block showing: npm install -g @seyyidt/kun-js
+  below: "Requires Node.js >= 20" in muted text
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - code block should have a dark card background (#161616 or similar), rounded corners, monospace font, padding
+  - slightly different background from main page to create visual separation (alternate section)

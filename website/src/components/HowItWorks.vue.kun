@@ -1,0 +1,57 @@
+@target vue3
+
+A section explaining the 3-step workflow. Has id="how-it-works" for anchor linking.
+
+content:
+  heading: "How it works"
+
+  Step 1 — "Configure your provider"
+  code block:
+    // kun.config.js
+    export default {
+      provider: "anthropic",
+      model: "claude-sonnet-4-20250514",
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    };
+
+  Step 2 — "Write a .kun file"
+  code block:
+    @target vue3
+    @component SearchBar
+
+    intent:
+      A search input for the app header.
+      Debounces input and emits a search event.
+
+    props:
+      placeholder: string (default: "Search...")
+      debounceMs:  number (default: 300)
+
+    behavior:
+      on input  -> debounce, then emit search
+      on Escape -> clear input and emit empty string
+
+    constraints:
+      - no external libraries
+      - fully keyboard accessible
+
+  Step 3 — "Generate"
+  code block:
+    # Generate a single file
+    kun build SearchBar.vue.kun
+
+    # Build all .kun files
+    kun build
+
+    # Preview without calling the API
+    kun build --dry-run
+
+layout:
+  each step has a number badge (1, 2, 3), a title, and a code block below
+  steps are stacked vertically with clear spacing
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - step numbers should be styled as small accent-colored circles
+  - code blocks: dark card (#161616), rounded, monospace, with some syntax color hints (comments in gray, strings in green, keywords in blue/purple)

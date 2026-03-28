@@ -1,0 +1,19 @@
+@target vue3
+
+A section showing supported LLM providers. Has id="providers" for anchor linking.
+
+content:
+  heading: "Provider-agnostic"
+  paragraph: "Use any LLM backend. Built-in support for:"
+
+  three cards in a grid:
+    1. title "Anthropic", subtitle "Claude models", code: provider: "anthropic"
+    2. title "OpenAI", subtitle "GPT models", code: provider: "openai"
+    3. title "Custom", subtitle "Ollama, vLLM, LM Studio, or any OpenAI-compatible endpoint", code: provider: "custom"
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - cards: dark background (#161616), border (#262626), rounded corners, padding
+  - card code snippets in monospace with accent color
+  - responsive: single column on mobile, three columns on desktop

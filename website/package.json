@@ -1,20 +1,21 @@
 {
-  "name": "vue-sample",
+  "name": "kun-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "kun": "kun build"
   },
   "dependencies": {
-    "dotenv": "^16.4.0",
     "vue": "^3.5.0"
   },
   "devDependencies": {
+    "@seyyidt/kun-js": "file:../",
     "@vitejs/plugin-vue": "^5.2.0",
-    "@seyyidt/kun-js": "file:../../",
+    "dotenv": "^16.4.0",
     "vite": "^6.2.0"
   }
 }

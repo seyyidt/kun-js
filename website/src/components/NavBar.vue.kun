@@ -1,0 +1,19 @@
+@target vue3
+
+A sticky top navigation bar for the kun landing page.
+
+layout:
+  left: logo text "kun" linking to /
+  right: horizontal links — "Install", "How it works", "Providers", and "GitHub" (external link to https://github.com/seyyidt/kun-js)
+
+behavior:
+  - stays fixed at the top while scrolling
+  - has a subtle backdrop blur and semi-transparent dark background
+  - Install links to #install, How it works to #how-it-works, Providers to #providers
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - links are plain <a> tags, no router
+  - GitHub link opens in new tab
+  - responsive: on small screens, keep logo and links but reduce spacing

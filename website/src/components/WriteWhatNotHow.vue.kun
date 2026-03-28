@@ -1,0 +1,30 @@
+@target vue3
+
+A section about what to write in .kun files.
+
+content:
+  heading: "Write what, not how"
+  paragraph: "A .kun file is plain, structured natural language. No strict syntax — clarity is the only rule."
+
+  two columns side by side:
+    left column — "Do write" (with a green accent):
+      - What the component/module is for
+      - What data it receives and emits
+      - How it should behave
+      - Hard constraints
+      - What it may assume exists
+
+    right column — "Don't write" (with a red accent):
+      - HTML structure or markup
+      - CSS class names or style values
+      - Variable names or function signatures
+      - Implementation strategy
+
+  below: "The generator decides how. You decide what." in muted/italic text
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - alternate section background
+  - responsive: stack columns vertically on mobile
+  - "Do" heading in green (#22c55e), "Don't" heading in red (#ef4444)

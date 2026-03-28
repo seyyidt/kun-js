@@ -1,0 +1,18 @@
+@target vue3
+
+A section explaining the git sync contract.
+
+content:
+  heading: "The git sync contract"
+  paragraph: "When you commit both a .kun file and its generated source file together, they are declared in sync. After that, you own the generated code — edit it freely. The .kun file remains as documentation of intent."
+
+  a visual showing two items side by side with a divider:
+    left: ".kun file" with subtitle "Ground truth for intent"
+    right: "Source file" with subtitle "Ground truth for implementation"
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - alternate section background
+  - the two items should be visually balanced, like two cards or two labeled boxes
+  - responsive: stack vertically on mobile

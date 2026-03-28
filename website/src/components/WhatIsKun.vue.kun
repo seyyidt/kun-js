@@ -1,0 +1,20 @@
+@target vue3
+
+A section explaining what kun is.
+
+content:
+  heading: "What is kun?"
+  paragraph: "kun is a CLI tool that generates source code from .kun requirement files using LLMs. You describe what a file should do, and kun produces a working first draft."
+
+  a visual flow diagram showing three steps horizontally:
+    "SearchBar.vue.kun" (labeled "Write") -> "kun build" (labeled "Build") -> "SearchBar.vue" (labeled "Result")
+  use arrow symbols between steps
+
+  below the flow: "The filename encodes the output. Everything before .kun is the file that gets generated." in muted text
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - flow steps should be styled as code/monospace in rounded boxes
+  - arrows between steps
+  - responsive: stack flow vertically on mobile

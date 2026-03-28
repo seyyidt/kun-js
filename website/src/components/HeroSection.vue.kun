@@ -1,0 +1,19 @@
+@target vue3
+
+The hero/header section of the kun landing page.
+
+layout:
+  - centered vertically with generous padding
+  - large heading: "kun"
+  - below that, Arabic calligraphy text: "كُن فَيَكُونُ" in a subtle lighter color
+  - tagline: "Be, and it is" — the imperative form of existence.
+  - sub-tagline: "You state intent. Kun translates it into real code."
+  - two buttons side by side: "Get started" (links to #install, primary/accent style) and "View on GitHub" (links to https://github.com/seyyidt/kun-js, secondary/outline style)
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - heading should be very large (4rem+) and bold
+  - Arabic text should use a larger font size and be visually distinct
+  - accent color: a warm amber/gold (#f59e0b or similar)
+  - responsive: stack buttons vertically on mobile

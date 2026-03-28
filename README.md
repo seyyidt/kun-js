@@ -19,9 +19,9 @@ The filename encodes the output. Everything before `.kun` is the file that gets 
 ## Install
 
 ```bash
-npm install -g kun-js
+npm install -g @seyyidt/kun-js
 # or
-npm install --save-dev kun-js
+npm install --save-dev @seyyidt/kun-js
 ```
 
 Requires Node.js >= 20.

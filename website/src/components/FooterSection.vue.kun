@@ -1,0 +1,17 @@
+@target vue3
+
+The footer of the kun landing page.
+
+layout:
+  centered content with:
+  - "kun" logo text
+  - horizontal links: GitHub (https://github.com/seyyidt/kun-js), npm (https://www.npmjs.com/package/@seyyidt/kun-js), Issues (https://github.com/seyyidt/kun-js/issues)
+  - "MIT License" text
+
+constraints:
+  - use <script setup lang="ts">
+  - scoped styles
+  - subtle top border (#262626)
+  - muted text colors
+  - all external links open in new tab
+  - padding top and bottom for breathing room

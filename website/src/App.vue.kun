@@ -1,0 +1,30 @@
+@target vue3
+
+A single-page landing site for "kun" — an intent-driven code generator CLI tool.
+
+The page is a vertical scroll of sections. Import and use these components in order:
+  - NavBar
+  - HeroSection
+  - WhatIsKun
+  - InstallSection
+  - HowItWorks
+  - WriteWhatNotHow
+  - ProvidersSection
+  - GitSyncContract
+  - FooterSection
+
+All components are in ./components/.
+
+Global styles:
+  - font-family: "Inter", sans-serif for body text
+  - font-family: "JetBrains Mono", monospace for code
+  - dark background (#0a0a0a), light text (#e5e5e5)
+  - smooth scroll behavior
+  - reset margins, padding, box-sizing: border-box
+  - max content width: 960px, centered
+
+constraints:
+  - use <script setup lang="ts">
+  - all global styles go in a non-scoped <style> block in App.vue
+  - each section component handles its own layout
+  - responsive: works on mobile and desktop

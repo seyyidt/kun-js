@@ -1,10 +1,10 @@
 {
-  "name": "kun-js",
+  "name": "@seyyidt/kun-js",
   "version": "0.1.0",
   "description": "Intent-driven code generator — write .kun requirements, get working code",
   "type": "module",
   "bin": {
-    "kun": "./bin/kun.js"
+    "kun": "bin/kun.js"
   },
   "exports": {
     ".": {
