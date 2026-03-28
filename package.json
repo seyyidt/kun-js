@@ -1,0 +1,43 @@
+{
+  "name": "kun-js",
+  "version": "0.1.0",
+  "description": "Intent-driven code generator — write .kun requirements, get working code",
+  "type": "module",
+  "bin": {
+    "kun": "./bin/kun.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "code-generation",
+    "llm",
+    "ai",
+    "intent",
+    "requirements"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "commander": "^13.1.0",
+    "openai": "^4.86.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.0"
+  }
+}

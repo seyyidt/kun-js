@@ -19,12 +19,12 @@ an LLM.
 
 ## This project
 
-`kun` is itself an NPM package — written in TypeScript, published to the NPM
+`kun-js` is itself an NPM package — written in TypeScript, published to the NPM
 registry, and installable in any project:
 
 ```bash
-npm install -g kun        # global CLI usage
-npm install --save-dev kun  # project-local usage via npx / package scripts
+npm install -g kun-js        # global CLI usage
+npm install --save-dev kun-js  # project-local usage via npx / package scripts
 ```
 
 **Language:** TypeScript (strict mode)
@@ -55,7 +55,7 @@ as it exposes a chat completion interface.
 
 ```ts
 // kun.config.ts
-import type { KunConfig } from "kun";
+import type { KunConfig } from "kun-js";
 
 export default {
   provider: "anthropic",          // "anthropic" | "openai" | "custom"
