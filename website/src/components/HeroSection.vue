@@ -2,8 +2,7 @@
   <section class="hero-section">
     <div class="hero-content">
       <h1 class="hero-title">kun</h1>
-      <div class="arabic-text">كُن فَيَكُونُ</div>
-      <p class="tagline">"Be, and it is" — the imperative form of existence.</p>
+      <p class="tagline">(Arabic: <span class="arabic-text">كُن</span>, "Be") — the imperative form of existence.</p>
 
       <div class="demo">
         <div class="demo-panel" :class="{ active: panelsVisible }">
@@ -60,7 +59,7 @@
           :class="{ active: currentStage >= i && phase !== 'idle' }"
         ></span>
       </div>
-      <p class="sub-tagline">Update your intent. Rebuild. The code evolves with you.</p>
+      <p class="sub-tagline">Update your intent. Rebuild. The code evolves with your requirements.</p>
       <div class="button-group">
         <a href="#install" class="btn btn-primary">Get started</a>
         <a href="https://github.com/seyyidt/kun-js" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View on GitHub</a>
@@ -300,11 +299,7 @@ onMounted(() => {
 }
 
 .arabic-text {
-  font-size: 2rem;
-  color: #a3a3a3;
-  margin-bottom: 1.5rem;
   font-family: 'Arial Unicode MS', 'Tahoma', sans-serif;
-  letter-spacing: 0.1em;
 }
 
 .tagline {
