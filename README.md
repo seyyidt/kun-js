@@ -1,5 +1,7 @@
 # kun
 
+[![npm](https://img.shields.io/npm/v/@seyyidt/kun-js)](https://www.npmjs.com/package/@seyyidt/kun-js)
+
 **kun** (كُن) — "Be, and it is." An intent-driven code generator.
 
 You state intent. Kun translates it into real code.
