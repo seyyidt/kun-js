@@ -1,4 +1,4 @@
-# Kun-js
+# kun
 
 **kun** (كُن) is Arabic for _"become"_ — the command to become. It is the first word of the phrase _kun fayakun_ (كن فيكون) — "Be, and it is [done]."
 
