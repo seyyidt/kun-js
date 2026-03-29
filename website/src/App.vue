@@ -47,7 +47,5 @@ code {
 
 #app {
   min-height: 100vh;
-  max-width: 960px;
-  margin: 0 auto;
 }
 </style>

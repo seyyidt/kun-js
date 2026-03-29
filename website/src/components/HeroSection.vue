@@ -11,7 +11,7 @@
             <span class="dot red"></span>
             <span class="dot yellow"></span>
             <span class="dot green"></span>
-            <span class="panel-title">Button.vue.kun</span>
+            <span class="panel-title">users.ts.kun</span>
           </div>
           <div class="panel-body">
             <div class="line" v-for="(line, i) in intentLines" :key="'i' + i">
@@ -38,7 +38,7 @@
             <span class="dot red"></span>
             <span class="dot yellow"></span>
             <span class="dot green"></span>
-            <span class="panel-title">Button.vue</span>
+            <span class="panel-title">users.ts</span>
           </div>
           <div class="panel-body">
             <div class="line" v-for="(line, i) in codeLines" :key="'c' + i">
@@ -69,31 +69,40 @@ const visibleIntentLines = ref(0)
 const visibleCodeLines = ref(0)
 
 const intentLines = [
-  '@target vue3',
+  '@target typescript',
+  '@module express router',
   '',
-  'A button that copies text to clipboard.',
-  'Shows "Copied!" for two seconds after click.',
-  'Uses no external libraries.',
+  'GET /users → list all users',
+  'GET /users/:id → single user or 404',
+  'POST /users → create user from body',
+  '',
+  'constraints:',
+  '  - validate email format on create',
+  '  - return JSON, proper status codes',
 ]
 
 const codeLines = [
-  '<span class="hl-tag">&lt;template&gt;</span>',
-  '  <span class="hl-tag">&lt;button</span> <span class="hl-attr">@click</span>=<span class="hl-str">"copy"</span><span class="hl-tag">&gt;</span>',
-  '    {{ label }}',
-  '  <span class="hl-tag">&lt;/button&gt;</span>',
-  '<span class="hl-tag">&lt;/template&gt;</span>',
+  '<span class="hl-kw">import</span> { Router } <span class="hl-kw">from</span> <span class="hl-str">\'express\'</span>',
   '',
-  '<span class="hl-tag">&lt;script</span> <span class="hl-attr">setup</span><span class="hl-tag">&gt;</span>',
-  '<span class="hl-kw">import</span> { ref } <span class="hl-kw">from</span> <span class="hl-str">\'vue\'</span>',
+  '<span class="hl-kw">const</span> router = <span class="hl-fn">Router</span>()',
   '',
-  '<span class="hl-kw">const</span> label = <span class="hl-fn">ref</span>(<span class="hl-str">\'Copy\'</span>)',
+  'router.<span class="hl-fn">get</span>(<span class="hl-str">\'/users\'</span>, <span class="hl-kw">async</span> (req, res) =&gt; {',
+  '  <span class="hl-kw">const</span> users = <span class="hl-kw">await</span> db.<span class="hl-fn">findAll</span>()',
+  '  res.<span class="hl-fn">json</span>(users)',
+  '})',
   '',
-  '<span class="hl-kw">async function</span> <span class="hl-fn">copy</span>() {',
-  '  <span class="hl-kw">await</span> navigator.clipboard.<span class="hl-fn">writeText</span>(<span class="hl-str">text</span>)',
-  '  label.value = <span class="hl-str">\'Copied!\'</span>',
-  '  <span class="hl-fn">setTimeout</span>(() =&gt; label.value = <span class="hl-str">\'Copy\'</span>, <span class="hl-num">2000</span>)',
-  '}',
-  '<span class="hl-tag">&lt;/script&gt;</span>',
+  'router.<span class="hl-fn">get</span>(<span class="hl-str">\'/users/:id\'</span>, <span class="hl-kw">async</span> (req, res) =&gt; {',
+  '  <span class="hl-kw">const</span> user = <span class="hl-kw">await</span> db.<span class="hl-fn">findById</span>(req.params.id)',
+  '  <span class="hl-kw">if</span> (!user) <span class="hl-kw">return</span> res.<span class="hl-fn">status</span>(<span class="hl-num">404</span>).<span class="hl-fn">json</span>({ <span class="hl-attr">error</span>: <span class="hl-str">\'Not found\'</span> })',
+  '  res.<span class="hl-fn">json</span>(user)',
+  '})',
+  '',
+  'router.<span class="hl-fn">post</span>(<span class="hl-str">\'/users\'</span>, <span class="hl-kw">async</span> (req, res) =&gt; {',
+  '  <span class="hl-kw">if</span> (!<span class="hl-fn">isValidEmail</span>(req.body.email))',
+  '    <span class="hl-kw">return</span> res.<span class="hl-fn">status</span>(<span class="hl-num">400</span>).<span class="hl-fn">json</span>({ <span class="hl-attr">error</span>: <span class="hl-str">\'Invalid email\'</span> })',
+  '  <span class="hl-kw">const</span> user = <span class="hl-kw">await</span> db.<span class="hl-fn">create</span>(req.body)',
+  '  res.<span class="hl-fn">status</span>(<span class="hl-num">201</span>).<span class="hl-fn">json</span>(user)',
+  '})',
 ]
 
 function sleep(ms: number) {
@@ -140,7 +149,7 @@ onMounted(() => {
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -177,7 +186,7 @@ onMounted(() => {
 /* Demo animation */
 .demo {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 1.5rem;
   margin-bottom: 2.5rem;
   text-align: left;
@@ -185,6 +194,7 @@ onMounted(() => {
 
 .demo-panel {
   flex: 1;
+  min-width: 0;
   background: #141414;
   border: 1px solid #262626;
   border-radius: 0.75rem;
@@ -192,7 +202,6 @@ onMounted(() => {
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-  min-height: 260px;
 }
 
 .demo-panel.active {
@@ -229,8 +238,9 @@ onMounted(() => {
 .panel-body {
   padding: 1rem;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1.6;
+  overflow: hidden;
 }
 
 .line {
