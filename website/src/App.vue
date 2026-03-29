@@ -2,6 +2,7 @@
   <div id="app">
     <NavBar />
     <HeroSection />
+    <PhilosophySection />
     <WhatIsKun />
     <InstallSection />
     <HowItWorks />
@@ -15,6 +16,7 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
+import PhilosophySection from './components/PhilosophySection.vue'
 import WhatIsKun from './components/WhatIsKun.vue'
 import InstallSection from './components/InstallSection.vue'
 import HowItWorks from './components/HowItWorks.vue'
