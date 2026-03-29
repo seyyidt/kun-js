@@ -3,6 +3,7 @@
     <div class="hero-content">
       <h1 class="hero-title">kun</h1>
       <p class="tagline">(Arabic: <span class="arabic-text">كُن</span>, "Be") — the imperative form of existence.</p>
+      <p class="description">Declare intent. Generate implementation. Ship code that reads the way you intended.</p>
 
       <div class="demo">
         <div class="demo-panel" :class="{ active: panelsVisible }">
@@ -305,8 +306,14 @@ onMounted(() => {
 .tagline {
   font-size: 1.25rem;
   color: #d4d4d4;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #a3a3a3;
+  margin-bottom: 2.5rem;
 }
 
 .sub-tagline {
