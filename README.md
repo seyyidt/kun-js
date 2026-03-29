@@ -1,6 +1,6 @@
 # kun
 
-**kun** (كُن) is Arabic for _"become"_ — the command to become. It is the first word of the phrase _kun fayakun_ (كن فيكون) — "Be, and it is [done]."
+**kun** (كُن) — "Be, and it is." An intent-driven code generator.
 
 You state intent. Kun translates it into real code.
 
