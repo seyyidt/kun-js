@@ -2,7 +2,7 @@
   <section class="hero-section">
     <div class="hero-content">
       <h1 class="hero-title">kun</h1>
-      <p class="tagline">(Arabic: <span class="arabic-text">كُن</span>, "Be") — the command to become.</p>
+      <p class="tagline">An intent-driven code generator.</p>
       <p class="description">Declare intent. Generate implementation. Ship code that reads the way you <span class="underline">intended</span>.</p>
 
       <div class="demo">

@@ -2,6 +2,9 @@
   <section class="what-is-kun">
     <h2 class="heading">What is kun?</h2>
     <p class="description">
+      kun (Arabic: <span class="arabic-text">كُن</span>, "Be") — the command to become.
+    </p>
+    <p class="description">
       kun is a CLI tool that generates source code from .kun requirement files using LLMs. You describe what a file should do, and kun produces a working first draft.
     </p>
     
@@ -54,7 +57,15 @@
   font-size: 1.125rem;
   line-height: 1.75;
   color: #a3a3a3;
+  margin-bottom: 1.5rem;
+}
+
+.description:last-of-type {
   margin-bottom: 3rem;
+}
+
+.arabic-text {
+  font-family: 'Arial Unicode MS', 'Tahoma', sans-serif;
 }
 
 .flow-diagram {

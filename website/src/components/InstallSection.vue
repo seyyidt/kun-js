@@ -47,6 +47,14 @@
   font-size: 1.1rem;
   color: #ffffff;
   white-space: nowrap;
+  overflow-x: auto;
+  display: block;
+}
+
+@media (max-width: 540px) {
+  .code-block code {
+    font-size: 0.85rem;
+  }
 }
 
 .requirement-text {
