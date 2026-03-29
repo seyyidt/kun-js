@@ -8,6 +8,7 @@
         <a href="https://github.com/seyyidt/kun-js/issues" target="_blank" rel="noopener noreferrer">Issues</a>
       </nav>
       <div class="license">MIT License</div>
+      <div class="privacy">We respect your privacy by not using any cookies.</div>
     </div>
   </footer>
 </template>
@@ -54,6 +55,11 @@
 }
 
 .license {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.privacy {
   color: #555;
   font-size: 0.8rem;
 }
