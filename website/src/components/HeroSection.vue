@@ -2,8 +2,8 @@
   <section class="hero-section">
     <div class="hero-content">
       <h1 class="hero-title">kun</h1>
-      <p class="tagline">(Arabic: <span class="arabic-text">كُن</span>, "Be") — the imperative form of existence.</p>
-      <p class="description">Declare intent. Generate implementation. Ship code that reads the way you intended.</p>
+      <p class="tagline">(Arabic: <span class="arabic-text">كُن</span>, "Be") — the command to become.</p>
+      <p class="description">Declare intent. Generate implementation. Ship code that reads the way you <span class="underline">intended</span>.</p>
 
       <div class="demo">
         <div class="demo-panel" :class="{ active: panelsVisible }">
@@ -314,6 +314,11 @@ onMounted(() => {
   font-size: 1.1rem;
   color: #a3a3a3;
   margin-bottom: 2.5rem;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .sub-tagline {

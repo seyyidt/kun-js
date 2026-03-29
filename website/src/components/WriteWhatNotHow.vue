@@ -29,7 +29,7 @@
         </div>
       </div>
       
-      <p class="footer-text">The generator decides how. You decide what.</p>
+      <p class="footer-text">You decide what. The generator decides how.</p>
     </div>
   </section>
 </template>

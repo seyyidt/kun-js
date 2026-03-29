@@ -1,6 +1,6 @@
 # kun
 
-**kun** (كُن) is Arabic for *"become"* — the imperative form of existence.
+**kun** (كُن) is Arabic for *"become"* — the command to become.
 In Arabic, *kun* is the first word of the phrase *kun fayakūn* (كن فيكون) — "Be, and it is [done]."
 
 You state intent. Kun translates it into real code.

@@ -6,7 +6,7 @@
         Machine code. Assembly. C. Java. Every generation of programming languages traded low-level control for readability. But we were always bound to a specific syntax.
       </p>
       <p class="paragraph last">
-        LLMs remove that constraint. You describe the requirements and intention of what a file should do, and the model delivers the code.
+        LLMs remove that constraint. You describe the requirements and intention of what a file should do, <span class="underline">in any human language you want</span>, and the model delivers the code.
       </p>
     </div>
   </section>
@@ -50,6 +50,11 @@
 .paragraph.last {
   color: #d4d4d4;
   margin-bottom: 0;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 768px) {

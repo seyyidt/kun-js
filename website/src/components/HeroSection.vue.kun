@@ -6,7 +6,7 @@ layout:
   - centered vertically with generous padding
   - large heading: "kun"
   - below that, Arabic calligraphy text: "كُن فَيَكُونُ" in a subtle lighter color
-  - tagline: "Be, and it is" — the imperative form of existence.
+  - tagline: "Be, and it is" — the command to become.
   - sub-tagline: "You state intent. Kun translates it into real code."
   - two buttons side by side: "Get started" (links to #install, primary/accent style) and "View on GitHub" (links to https://github.com/seyyidt/kun-js, secondary/outline style)
 
